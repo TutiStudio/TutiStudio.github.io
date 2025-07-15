@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Your 3D Print Shop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 32px 0 16px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    nav {
+      margin-top: 12px;
+    }
+    nav a {
+      margin: 0 16px;
+      text-decoration: none;
+      color: #4f46e5;
+      font-weight: 500;
+      font-size: 1.1em;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    h2 {
+      color: #4f46e5;
+      border-bottom: 2px solid #f4f4f4;
+      padding-bottom: 4px;
+      margin-bottom: 24px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 28px;
+    }
+    .product-card {
+      background: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      padding: 18px;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .product-card:hover {
+      box-shadow: 0 4px 16px rgba(79,70,229,0.12);
+    }
+    .product-card img {
+      max-width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      background: #e0e7ff;
+      padding: 7px;
+    }
+    .product-card .name {
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #4338ca;
+    }
+    .contact-info {
+      font-size: 1.1em;
+      margin-top: 16px;
+    }
+    @media (max-width: 600px) {
+      section {
+        padding: 14px;
+      }
+      .products {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your 3D Print Shop</h1>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#products">Our Products</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to Your 3D Print Shop! We specialize in creating unique, custom 3D printed items for every occasion. Our team is passionate about design, detail, and bringing joy through creative prints. Whether you need gifts, decorations, or prototypes, we’re here to help make your ideas a reality.
+    </p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/120?text=Product+1" alt="Product 1">
+        <div class="name">Mini Planter</div>
+        <div class="desc">A tiny planter for succulents and small plants.</div>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/120?text=Product+2" alt="Product 2">
+        <div class="name">Custom Keychain</div>
+        <div class="desc">Personalized keychains in fun shapes and colors.</div>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/120?text=Product+3" alt="Product 3">
+        <div class="name">Desk Organizer</div>
+        <div class="desc">Keep your workspace neat with this stylish organizer.</div>
+      </div>
+      <!-- Add more product cards as needed -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      Email: <a href="mailto:yourshop@email.com">yourshop@email.com</a><br>
+      Instagram: <a href="https://instagram.com/yourshop">@yourshop</a><br>
+      WhatsApp: <a href="https://wa.me/1234567890">+1 234 567 890</a>
+      <!-- Add other contact methods as needed -->
+    </div>
+  </section>
+
+</body>
+</html>
